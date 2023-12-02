@@ -16,7 +16,7 @@ const Footer = () => {
                     <div className="bg-white p-2 rounded-lg">
                         <b className="text-4xl">Electra<span className="text-yellow-500">Pulse</span> </b>
                     </div>
-                    <p className="my-4 text-white text-xl">Rutrum tellus pellentesque eu tincidunt. Venenatis cras sed felis eget velit aliquet sagittis id consectetur</p>
+                    <p className="my-4 text-white text-xl">Empowering innovation, one connection at a time. Explore cutting-edge solutions with Electra Pulse Your journey to excellence begins here.</p>
                     <div className="flex gap-x-4 justify-center md:justify-start mb-4">
                         <p className="text-3xl bg-white h-[35px] w-[35px] rounded-full flex items-center cursor-pointer">
                             <AiOutlineMail className="mx-auto text-yellow-600"></AiOutlineMail>

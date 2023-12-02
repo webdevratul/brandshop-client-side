@@ -4,14 +4,14 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     const navLinks = <>
         <li className="hover:text-orange-400"><NavLink to="/">Home</NavLink></li>
-        <li className="hover:text-orange-400"><NavLink>About</NavLink></li>
-        <li className="hover:text-orange-400"><NavLink>Brands</NavLink></li>
-        <li className="hover:text-orange-400"><NavLink>Contact</NavLink></li>
+        <li className="hover:text-orange-400"><NavLink to="/about">About</NavLink></li>
+        <li className="hover:text-orange-400"><NavLink to="/brands">Brands</NavLink></li>
+        <li className="hover:text-orange-400"><NavLink to="/contact">Contact</NavLink></li>
         <li className="hover:text-orange-400"><NavLink>Add Products</NavLink></li>
         <li className="hover:text-orange-400"><NavLink>My Cart</NavLink></li>
     </>
     return (
-        <div className="flex flex-col xl:flex-row justify-around pt-10 pb-6 bg-[#5D1427] items-center text-white text-center">
+        <div className="flex flex-col xl:flex-row justify-around py-10 bg-[#5D1427] items-center text-white text-center">
             <div>
                 <b className="text-4xl">Electra<span className="text-yellow-500">Pulse</span> </b>
             </div>
