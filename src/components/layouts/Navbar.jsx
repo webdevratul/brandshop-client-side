@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div className="flex flex-col xl:flex-row justify-around pt-10 pb-6 bg-[#5D1427] items-center text-white text-center">
             <div>
-                <b className="text-4xl">Electra<span className="text-orange-400">Pulse</span> </b>
+                <b className="text-4xl">Electra<span className="text-yellow-500">Pulse</span> </b>
             </div>
             <div>
                 <ul className="flex flex-col lg:flex-row my-4 2xl:my-0 gap-8 text-2xl pt-3">
