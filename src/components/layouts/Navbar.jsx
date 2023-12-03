@@ -20,11 +20,11 @@ const Navbar = () => {
         <li className="hover:text-orange-400"><NavLink to="/about">About</NavLink></li>
         <li className="hover:text-orange-400"><NavLink to="/brands">Brands</NavLink></li>
         <li className="hover:text-orange-400"><NavLink to="/contact">Contact</NavLink></li>
-        <li className="hover:text-orange-400"><NavLink>Add Products</NavLink></li>
+        <li className="hover:text-orange-400"><NavLink to="/addProducts">Add Products</NavLink></li>
         <li className="hover:text-orange-400"><NavLink>My Cart</NavLink></li>
     </>
     return (
-        <div className="flex flex-col xl:flex-row justify-around py-6 bg-[#3c0a18] items-center text-white text-center">
+        <div className="flex flex-col xl:flex-row justify-around py-6 bg-[#440c1c] items-center text-white text-center">
             <div>
                 <b className="text-4xl">Electra<span className="text-yellow-500">Pulse</span> </b>
             </div>

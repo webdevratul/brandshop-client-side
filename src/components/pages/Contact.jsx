@@ -15,7 +15,7 @@ const Contact = () => {
                     <input className=" w-[100%] xl:w-[48%] px-2 py-3 border outline-none m-2" type="email" name="name" placeholder="E-mail:" />
                     <br />
                     <textarea name="" id="" className="w-[100%] xl:w-[98%] h-36 px-2 py-2 m-2 border outline-none" placeholder="Text Us"></textarea>
-                    <button className="mx-auto bg-yellow-500 py-4 px-8 text-white font-semibold my-4 text-xl rounded-full font-serif">Message</button>
+                    <button className="mx-auto bg-yellow-600 py-4 px-8 text-white font-semibold my-4 text-xl rounded-full font-serif">Message</button>
                 </form>
 
             </div>

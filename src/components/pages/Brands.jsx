@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import UseAxios from "../../hooks/UseAxios";
 import { useQuery } from "@tanstack/react-query";
 
@@ -20,10 +21,13 @@ const Brands = () => {
             <div className="w-[80%] md:w-[60%] mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 cursor-pointer">
                 {
                     allBrands.map((brand, index) =>
-                        <div key={index} className="h-[310px]  bg-white p-4 shadow-2xl">
-                            <img className="w-[100%] h-[250px]" src={brand.imageUrl} alt="" />
-                            <h2 className="text-center text-2xl font-bold py-1">{brand.brandName}</h2>
-                        </div>)
+                        <Link key={index} to={`/product/${brand?._id}`}>
+                            <div className="h-[310px]  bg-white p-4 shadow-2xl">
+                                <img className="w-[100%] h-[250px]" src={brand.imageUrl} alt="" />
+                                <h2 className="text-center text-2xl font-bold py-1">{brand.brandName}</h2>
+                            </div>
+                        </Link>
+                    )
                 }
 
             </div>
