@@ -8,18 +8,16 @@ const AddProducts = () => {
         const form = e.target;
         const photo = form.photo.value;
         const name = form.name.value;
-        const brandName = form.brandName.value;
-        const insertBrandName = brandName.toUpperCase();
         const productType = form.productType.value;
         const price = form.price.value;
         const description = form.description.value;
         const rating = form.rating.value;
+        const brandName = (form.brandName.value).toUpperCase();
+        const insertBrandName = brandName.replace(/\s/g, '');
 
         const storeProductData = {
-            photo, name, insertBrandName, productType, price, description, rating
+            photo, name,insertBrandName, productType, price, description, rating,
         }
-
-
 
         fetch("http://localhost:200/productData", {
             method: "POST",
@@ -56,7 +54,7 @@ const AddProducts = () => {
                     <br />
                     <br />
                     <small className="m-2 text-gray-400">Brand Name*</small>
-                    <input className="w-[100%] h-12 bg-white outline-none rounded-md  px-2" type="text" name="brandName" required placeholder="Brand Name" />
+                    <input className="w-[100%] h-12 bg-white outline-none rounded-md px-2" type="text" name="brandName" placeholder="Brand Name" required />
                     <br />
                     <br />
                     <small className="m-2 text-gray-400">Product Type*</small>
@@ -79,7 +77,7 @@ const AddProducts = () => {
                     <input className="w-[100%] h-12 bg-white outline-none rounded-md  px-2" type="number" name="rating" required placeholder="Give Rating" />
                     <br />
                     <br />
-                    <input className="w-[100%] h-12 outline-none rounded-md  px-2 bg-[#5D1427] text-white text-xl font-semibold cursor-pointer" type="submit" value="Add" />
+                    <input className="w-[100%] h-12 outline-none rounded-md  px-2 bg-black text-white text-xl font-semibold cursor-pointer" type="submit" value="Add" />
                 </form>
             </div>
         </div>

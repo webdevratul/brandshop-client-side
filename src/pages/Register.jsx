@@ -81,7 +81,7 @@ const Register = () => {
                             </div>
                             <p className="text-red-600">{registerError}</p>
                             <div className="form-control my-6">
-                                <button className="bg-[#5D1427] py-3 text-xl text-white rounded-lg">Register</button>
+                                <button className="bg-black py-3 text-xl text-white rounded-lg">Register</button>
                             </div>
                             <p>If you have Already an account please <Link to="/login" className="underline text-blue-600 text-xl">Login</Link>  </p>
                         </form>

@@ -21,7 +21,7 @@ const Brands = () => {
             <div className="w-[80%] md:w-[60%] mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 cursor-pointer">
                 {
                     allBrands.map((brand, index) =>
-                        <Link key={index} to={`/product/${brand?._id}`}>
+                        <Link key={index} to={`/products/${brand?._id}`}>
                             <div className="h-[310px]  bg-white p-4 shadow-2xl">
                                 <img className="w-[100%] h-[250px]" src={brand.imageUrl} alt="" />
                                 <h2 className="text-center text-2xl font-bold py-1">{brand.brandName}</h2>

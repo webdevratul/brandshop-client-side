@@ -20,15 +20,20 @@ const Navbar = () => {
         <li className="hover:text-orange-400"><NavLink to="/about">About</NavLink></li>
         <li className="hover:text-orange-400"><NavLink to="/brands">Brands</NavLink></li>
         <li className="hover:text-orange-400"><NavLink to="/contact">Contact</NavLink></li>
-        <li className="hover:text-orange-400"><NavLink to="/addProducts">Add Products</NavLink></li>
-        <li className="hover:text-orange-400"><NavLink>My Cart</NavLink></li>
+        {
+            user &&
+            <>
+                <li className="hover:text-orange-400"><NavLink to="/addProducts">Add Products</NavLink></li>
+                <li className="hover:text-orange-400"><NavLink>My Cart</NavLink></li>
+            </>
+        }
     </>
     return (
-        <div className="flex flex-col xl:flex-row justify-around py-6 bg-[#440c1c] items-center text-white text-center">
+        <div className="flex flex-col xl:flex-row justify-around py-8 bg-black items-center text-white text-center">
             <div>
                 <b className="text-4xl">Electra<span className="text-yellow-500">Pulse</span> </b>
             </div>
-            <div>
+            <div className="pt-3">
                 <ul className="flex flex-col lg:flex-row my-4 2xl:my-0 gap-8 text-2xl">
                     {navLinks}
                 </ul>

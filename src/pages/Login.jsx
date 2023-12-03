@@ -85,7 +85,7 @@ const Login = () => {
                                 <input type="password" placeholder="password" name="password" className="input input-bordered" required />
                             </div>
                             <div className="form-control mt-6">
-                                <button className="py-3 text-xl text-white bg-[#5D1427] rounded-lg mb-6">Login</button>
+                                <button className="py-3 text-xl text-white bg-black rounded-lg mb-6">Login</button>
                                 <button onClick={handleGoogleLogin} className="py-3 text-xl text-white bg-blue-600 mb-6 rounded-lg">Login With Google</button>
                             </div>
                             <p>If you are new in this website please <Link to="/register" className="underline text-blue-600 text-xl">Register</Link>  </p>
