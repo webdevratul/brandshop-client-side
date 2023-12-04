@@ -22,8 +22,8 @@ const Brands = () => {
                 {
                     allBrands.map((brand, index) =>
                         <Link key={index} to={`/products/${brand?._id}`}>
-                            <div className="h-[310px]  bg-white p-4 shadow-2xl">
-                                <img className="w-[100%] h-[250px]" src={brand.imageUrl} alt="" />
+                            <div className="h-[310px]  bg-white p-4 shadow-2xl rounded-xl">
+                                <img className="w-[100%] rounded-xl h-[250px]" src={brand.imageUrl} alt="" />
                                 <h2 className="text-center text-2xl font-bold py-1">{brand.brandName}</h2>
                             </div>
                         </Link>

@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 const Register = () => {
 
-    const { createUser, profileUpdate } = useContext(authContext);
+    const { createUser, profileUpdate, setLoading } = useContext(authContext);
     const [registerError, setRegisterError] = useState("");
     const navigate = useNavigate();
 
@@ -39,8 +39,10 @@ const Register = () => {
                             timerProgressBar: true,
                         });
                         profileUpdate(name, photo);
+                        setLoading(false);
                         e.target.reset();
                         navigate("/");
+
                     }
                 })
                 .catch((error) => {

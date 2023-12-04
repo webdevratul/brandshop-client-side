@@ -19,14 +19,19 @@ const Navbar = () => {
         <li className="hover:text-orange-400"><NavLink to="/">Home</NavLink></li>
         <li className="hover:text-orange-400"><NavLink to="/about">About</NavLink></li>
         <li className="hover:text-orange-400"><NavLink to="/brands">Brands</NavLink></li>
+        <li className="hover:text-orange-400"><NavLink to="/case">Case Studies</NavLink></li>
         <li className="hover:text-orange-400"><NavLink to="/contact">Contact</NavLink></li>
         {
             user &&
             <>
                 <li className="hover:text-orange-400"><NavLink to="/addProducts">Add Products</NavLink></li>
-                <li className="hover:text-orange-400"><NavLink>My Cart</NavLink></li>
+                <li className="hover:text-orange-400"><NavLink to="/myCart">My Cart</NavLink></li>
+                <li> <div className="flex items-center">
+                    <img className="w-[40px] h-[40px] ml-10 rounded-full border-2 object-cover cursor-pointer" src={user?.photoURL} alt="" title={`${user?.displayName}`} />
+                </div></li>
             </>
         }
+
     </>
     return (
         <div className="flex flex-col xl:flex-row justify-around py-8 bg-black items-center text-white text-center">
@@ -40,9 +45,10 @@ const Navbar = () => {
             </div>
             <div>
                 {
-                    user ? <button onClick={handleSignOut} className="px-6 py-1 shadow-2xl border-2 bg-transparent text-2xl rounded-full font-bold">Logout</button> :
+
+                    user ? <button onClick={handleSignOut} className="px-6 py-1  shadow-2xl border-2 bg-transparent text-2xl rounded-full font-bold">Logout</button> :
                         <Link to="/login">
-                            <button className="px-6 py-1 shadow-2xl border-2 bg-transparent text-2xl rounded-full font-bold">Login</button>
+                            <button className="px-6 py-1 shadow-2xl border-2  bg-transparent text-2xl rounded-full font-bold">Login</button>
                         </Link>
                 }
             </div>
